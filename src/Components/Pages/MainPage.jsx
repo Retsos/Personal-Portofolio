@@ -48,18 +48,34 @@ export default function MainPage() {
                     <section id="projects" className="mb-4">
                         <h2>Projects</h2>
                         <div>
-                            <h5>Personal Portfolio</h5>
-                            <p>A responsive personal portfolio website built with React and Bootstrap.</p>
-                            <p>A Monopoly Game application made as a project for University using JavaFX library.</p>
-                            <p>Working on an Employee Managment Web App using React for frontent and Django for Backend.</p>
+                            <h5 >Finished Projects</h5>
+                            <div>
+                                <h6>Personal Portfolio</h6>
+                                <p>A fully responsive personal portfolio website built using React and Bootstrap.</p>
+                            </div>
+                            <div>
+                                <h6>Monopoly Game</h6>
+                                <p>A desktop game application developed for a university project using the JavaFX library.</p>
+                            </div>
+
+                            <h5>Ongoing Projects</h5>
+                            <div>
+                                <h6>Employee Management</h6>
+                                <p>Currently working on a web application using React and Bootstrap for the frontend, and Django for backend.</p>
+                            </div>
+                            <div>
+                                <h6>IHU Car</h6>
+                                <p>A team project where I am part of the backend team. We are responsible for developing the backend using Django.</p>
+                            </div>
                         </div>
                     </section>
+
 
                     <section id="languages" className="mb-4">
                         <h2>Languages</h2>
                         <ul>
                             <li>Greek (Native)</li>
-                            <li>English </li>
+                            <li>English (B2)</li>
                         </ul>
                     </section>
                 </div>
@@ -67,7 +83,7 @@ export default function MainPage() {
 
             <footer className="footer">
                 <div className="footer-content">
-                    <p>© 2025 Your Name - All rights reserved.</p>
+                    <p>© 2025 George Retsilas - All rights reserved.</p>
                     <p>Personal Portfolio</p>
                 </div>
             </footer>
