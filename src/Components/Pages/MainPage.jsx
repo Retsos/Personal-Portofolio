@@ -48,25 +48,46 @@ export default function MainPage() {
                     <section id="projects" className="mb-4">
                         <h2>Projects</h2>
                         <div>
-                            <h5 >Finished Projects</h5>
+                            <h4>Completed Projects</h4>
                             <div>
                                 <h6>Personal Portfolio</h6>
-                                <p>A fully responsive personal portfolio website built using React and Bootstrap.</p>
+                                <p>
+                                    A fully responsive personal portfolio built using React and Bootstrap.
+                                </p>
                             </div>
                             <div>
                                 <h6>Monopoly Game</h6>
-                                <p>A desktop game application developed for a university project using the JavaFX library.</p>
+                                <p>
+                                    A desktop game application developed for a university project using the JavaFX library.
+                                </p>
                             </div>
 
-                            <h5>Ongoing Projects</h5>
+                            <h4>Ongoing Projects</h4>
+                            <div>
+                                <h6>Eshop Project</h6>
+                                <p>
+                                    A custom and fully functional e-shop developed by a team of two. We used React.js for the frontend and Python for the backend.
+                                </p>
+                            </div>
                             <div>
                                 <h6>Employee Management</h6>
-                                <p>Currently working on a web application using React and Bootstrap for the frontend, and Django for backend.</p>
+                                <p>
+                                    An ongoing web application for employee management, built with React and Bootstrap on the frontend and Django on the backend.
+                                </p>
                             </div>
                             <div>
                                 <h6>IHU Car</h6>
-                                <p>A team project where I am part of the backend team. We are responsible for developing the backend using Django.</p>
+                                <p>
+                                    A team project where I contribute to the backend development using Django.
+                                </p>
                             </div>
+                        </div>
+
+                        {/* Additional note about backend learning */}
+                        <div className="mt-3">
+                            <p>
+                                Note: I am currently learning backend development to expand my skills and better support full-stack projects.
+                            </p>
                         </div>
                     </section>
 
