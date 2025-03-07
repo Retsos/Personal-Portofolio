@@ -10,7 +10,12 @@
     font-weight: bold;
     letter-spacing: 2px;
   }
-  
+  .navbar-toggler {
+    border-color: white;
+  }
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
   /* Navbar items styling */
   .navbar-nav .nav-link {
     font-size: 1.2rem;
