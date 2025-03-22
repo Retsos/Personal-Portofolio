@@ -62,13 +62,18 @@ export default function MainPage() {
                                 </p>
                             </div>
 
-                            <h4>Ongoing Projects</h4>
                             <div>
                                 <h6>Eshop Project</h6>
                                 <p>
                                     A custom and fully functional e-shop developed by a team of two. We used React.js for the frontend and Python for the backend.
+                                    <a href="https://users.it.teithe.gr/~georrets/Eshop/" className="text-decoration-none ms-2" style={{ color: "blue" }} target="_blank">
+                                        Check it out here
+                                    </a>
                                 </p>
                             </div>
+
+                            <h4>Ongoing Projects</h4>
+
                             <div>
                                 <h6>Employee Management</h6>
                                 <p>
@@ -76,9 +81,12 @@ export default function MainPage() {
                                 </p>
                             </div>
                             <div>
-                                <h6>IHU Car</h6>
+                                <h6>ThessInfo</h6>
                                 <p>
-                                    A team project where I contribute to the backend development using Django.
+                                    A location-based app providing specialized information about
+                                    Thessaloniki, including air quality and waste management data. It helps users make
+                                    informed health decisions and raises environmental awareness, enhancing the
+                                    quality of life for city residents.
                                 </p>
                             </div>
                         </div>
