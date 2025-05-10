@@ -72,6 +72,16 @@ export default function MainPage() {
                                 </p>
                             </div>
 
+                            <div>
+                                <h6>Recipe Realm</h6>
+                                <p>
+                                    📱 A full-featured cross-platform recipe app built with Flutter and Dart, enabling users to browse, create, and manage cooking recipes. 
+                                    It supports Firebase Firestore for cloud synchronization, Supabase Storage for image uploads, and Floor for offline local data access. 
+                                    The app includes guest user functionality, scheduled push notifications via Firebase Functions, automatic syncing of favorite recipes when connectivity is restored, and a responsive design optimized for both portrait and landscape orientations.
+                                </p>
+                                </div>
+
+
                             <h4>Ongoing Projects</h4>
 
                             <div>
@@ -91,7 +101,6 @@ export default function MainPage() {
                             </div>
                         </div>
 
-                        {/* Additional note about backend learning */}
                         <div className="mt-3">
                             <p>
                                 Note: I am currently learning backend development to expand my skills and better support full-stack projects.
