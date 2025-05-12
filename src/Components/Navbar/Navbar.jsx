@@ -1,35 +1,90 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './Navbar.css'
 
 function Navbar() {
+    const [activeSection, setActiveSection] = useState("home");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll("section");
+            let current = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 100) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            if (current) {
+                setActiveSection(current);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <>
-            <nav className="navbar navbar-expand-lg nav">
-                <div className="container">
-                    <a className="navbar-brand text-white">My Resume</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto items">
-                            <li className="nav-item ">
-                                <a className="nav-link text-white" href="#personal-info">Personal Info</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#education">Education</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#skills">Skills</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#projects">Projects</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#languages">Languages</a>
-                            </li>
-                        </ul>
-                    </div>
+            <nav className="navbar">
+                <div className="nav-logo">GR</div>
+                <div className={`nav-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+                    <li>
+                        <a
+                            href="#home"
+                            className={activeSection === "home" ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#about"
+                            className={activeSection === "about" ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#skills"
+                            className={activeSection === "skills" ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#projects"
+                            className={activeSection === "projects" ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            className={activeSection === "contact" ? "active" : ""}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </>
     );
