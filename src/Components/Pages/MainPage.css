@@ -129,6 +129,25 @@ a:hover {
   transition: var(--transition);
 }
 
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link.secondary {
+  background-color: transparent;
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: var(--transition);
+}
+.project-link.secondary:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+
 .social-link:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);

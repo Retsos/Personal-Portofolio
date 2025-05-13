@@ -19,7 +19,8 @@ const projectsData = [
         title: "E-shop Project",
         description: "A custom and fully functional e-shop using React.js for the frontend and Python for the backend.",
         tags: ["Web", "React", "Python"],
-        link: "https://users.it.teithe.gr/~georrets/Eshop/"
+        link: " https://github.com/MR-Liakos/Project-E-Shop",
+        EshopLink: "https://users.it.teithe.gr/~georrets/Eshop/"
     },
     {
         id: 3,
@@ -171,7 +172,7 @@ const ModernPortfolio = () => {
                                         <FaCode />
                                     </div>
                                     <div className="skill-info">
-                                        <h4>FireStore-FireBasae</h4>
+                                        <h4>FireStore-FireBase</h4>
                                         <div className="skill-bar">
                                             <div className="skill-level" style={{ width: "40%" }}></div>
                                         </div>
@@ -257,26 +258,42 @@ const ModernPortfolio = () => {
                     <div className="projects-grid">
                         {filteredProjects.map(proj => (
                             <div key={proj.id} className="project-card">
-                                <div className="project-image">
-                                    <div className="project-overlay">
-                                        <FaLaptopCode className="project-icon" />
-                                    </div>
-                                </div>
+                                {/* …project-image… */}
                                 <div className="project-info">
                                     <h3>{proj.title}</h3>
                                     <p>{proj.description}</p>
                                     <div className="project-tags">
-                                        {proj.tags.map(tag => (
-                                            <span key={tag} className="tag">{tag}</span>
-                                        ))}
+                                        {proj.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                                     </div>
-                                    <a href={proj.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                                        View {proj.title === "E-shop Project" ? "Project" : "Details"}
-                                    </a>
+                                    <div className="project-buttons">
+
+                                        <a
+                                            href={proj.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="project-link"
+                                        >
+                                            View Details
+                                        </a>
+                                        
+                                        {proj.EshopLink && (
+                                            <a
+                                                href={proj.EshopLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="project-link secondary"
+                                            >
+                                            View {proj.title === "E-shop Project" ? "Project" : "Details"}
+                                            </a>
+                                        )}
+
+                                    </div>
+
                                 </div>
                             </div>
                         ))}
                     </div>
+
                 </div>
             </section>
 
