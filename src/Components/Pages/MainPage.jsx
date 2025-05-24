@@ -34,7 +34,9 @@ const projectsData = [
         title: "ThessInfo",
         description: "A location-based app providing specialized information about Thessaloniki, including air quality and waste management data.",
         tags: ["Web", "React", "Python"],
-        link: "https://github.com/Retsos/ThessInfo"
+        link: "https://github.com/Retsos/ThessInfo",
+        ThessInfo: "https://users.it.teithe.gr/~iliasalt/ThessInfo/"
+
     },
 ];
 
@@ -107,7 +109,6 @@ const ModernPortfolio = () => {
                 </div>
             </section>
 
-            {/* Skills Section */}
             <section id="skills" className="section">
                 <div className="section-container">
                     <div className="section-header">
@@ -233,7 +234,6 @@ const ModernPortfolio = () => {
                 </div>
             </section>
 
-            {/* Projects Section */}
             <section id="projects" className="section">
                 <div className="section-container">
                     <div className="section-header">
@@ -241,7 +241,6 @@ const ModernPortfolio = () => {
                         <div className="section-divider"></div>
                     </div>
 
-                    {/* Filter Buttons */}
                     <div className="projects-filter">
                         {categories.map(cat => (
                             <button
@@ -254,11 +253,9 @@ const ModernPortfolio = () => {
                         ))}
                     </div>
 
-                    {/* Grid με φιλτραρισμένα projects */}
                     <div className="projects-grid">
                         {filteredProjects.map(proj => (
                             <div key={proj.id} className="project-card">
-                                {/* …project-image… */}
                                 <div className="project-info">
                                     <h3>{proj.title}</h3>
                                     <p>{proj.description}</p>
@@ -284,6 +281,17 @@ const ModernPortfolio = () => {
                                                 className="project-link secondary"
                                             >
                                             View {proj.title === "E-shop Project" ? "Project" : "Details"}
+                                            </a>
+                                        )}
+
+                                        {proj.ThessInfo && (
+                                            <a
+                                                href={proj.ThessInfo}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="project-link secondary"
+                                            >
+                                            View {proj.title === "ThessInfo" ? "Project" : "Details"}
                                             </a>
                                         )}
 
