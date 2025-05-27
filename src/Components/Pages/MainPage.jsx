@@ -17,7 +17,7 @@ const projectsData = [
     {
         id: 2,
         title: "E-shop Project",
-        description: "A custom and fully functional e-shop using React.js for the frontend and Python for the backend.",
+        description: "A full-stack e-commerce web application featuring a Django REST Framework backend and a React/Vite frontend. Users can browse products, manage their cart, authenticate via JWT, and checkout with PayPal (tester).",
         tags: ["Web", "React", "Python"],
         link: " https://github.com/MR-Liakos/Project-E-Shop",
         EshopLink: "https://users.it.teithe.gr/~georrets/Eshop/"
