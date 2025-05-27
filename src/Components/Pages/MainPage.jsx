@@ -32,7 +32,7 @@ const projectsData = [
     {
         id: 4,
         title: "ThessInfo",
-        description: "A location-based app providing specialized information about Thessaloniki, including air quality and waste management data.",
+        description: "A location-based app providing specialized information about Thessaloniki, including water quality, air quality, and recycling compliance data.",
         tags: ["Web", "React", "Python"],
         link: "https://github.com/Retsos/ThessInfo",
         ThessInfo: "https://users.it.teithe.gr/~iliasalt/ThessInfo/"
