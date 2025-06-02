@@ -36,8 +36,15 @@ const projectsData = [
         tags: ["Web", "React", "Python"],
         link: "https://github.com/Retsos/ThessInfo",
         ThessInfo: "https://users.it.teithe.gr/~iliasalt/ThessInfo/"
-
     },
+    {
+        id: 5,
+        title: "Full-Stack Auth App",
+        description: "A secure full-stack authentication application featuring a Django REST Framework + Knox backend and a React + Zustand frontend. A basic Login/Register/Logout app with protected routes ",
+        tags: ["Web", "React", "Python", "Django", "Zustand"],
+        link: "https://github.com/Retsos/auth-zustand-app"
+    }
+
 ];
 
 const categories = ["All", "Web", "Mobile", "Desktop"];
@@ -272,7 +279,7 @@ const ModernPortfolio = () => {
                                         >
                                             View Details
                                         </a>
-                                        
+
                                         {proj.EshopLink && (
                                             <a
                                                 href={proj.EshopLink}
@@ -280,7 +287,7 @@ const ModernPortfolio = () => {
                                                 rel="noopener noreferrer"
                                                 className="project-link secondary"
                                             >
-                                            View {proj.title === "E-shop Project" ? "Project" : "Details"}
+                                                View {proj.title === "E-shop Project" ? "Project" : "Details"}
                                             </a>
                                         )}
 
@@ -291,7 +298,7 @@ const ModernPortfolio = () => {
                                                 rel="noopener noreferrer"
                                                 className="project-link secondary"
                                             >
-                                            View {proj.title === "ThessInfo" ? "Project" : "Details"}
+                                                View {proj.title === "ThessInfo" ? "Project" : "Details"}
                                             </a>
                                         )}
 
