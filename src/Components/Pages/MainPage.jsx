@@ -162,6 +162,44 @@ const ModernPortfolio = () => {
                             </div>
                         </div>
                         <div className="skill-category">
+                            <h3>Backend</h3>
+                            <div className="skill-items">
+                                <div className="skill-item">
+                                    <div className="skill-icon">
+                                        <FaCode />
+                                    </div>
+                                    <div className="skill-info">
+                                        <h4>Python</h4>
+                                        <div className="skill-bar">
+                                            <div className="skill-level" style={{ width: "35%" }}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="skill-item">
+                                    <div className="skill-icon">
+                                        <FaCode />
+                                    </div>
+                                    <div className="skill-info">
+                                        <h4>Django Rest Framework</h4>
+                                        <div className="skill-bar">
+                                            <div className="skill-level" style={{ width: "30%" }}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="skill-item">
+                                    <div className="skill-icon">
+                                        <FaCode />
+                                    </div>
+                                    <div className="skill-info">
+                                        <h4>SQL</h4>
+                                        <div className="skill-bar">
+                                            <div className="skill-level" style={{ width: "35%" }}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skill-category">
                             <h3>Mobile Development</h3>
                             <div className="skill-items">
                                 <div className="skill-item">
@@ -191,7 +229,7 @@ const ModernPortfolio = () => {
                                         <FaCode />
                                     </div>
                                     <div className="skill-info">
-                                        <h4>SQLite</h4>
+                                        <h4>Floor API</h4>
                                         <div className="skill-bar">
                                             <div className="skill-level" style={{ width: "30%" }}></div>
                                         </div>
